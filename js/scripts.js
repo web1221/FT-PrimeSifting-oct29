@@ -18,15 +18,23 @@ $(document).ready(function(){
         notPrimes.push(number);
       } else if (number % 7 === 0 && number != 7){
         notPrimes.push(number);
-      }
-       else {
+      } else if (number === 1){
+        notPrimes.push(number);
+      } else {
         primeNumbers.push(number);
       }
     });
-    primeNumbers.shift();
-    notPrimes.unshift(1);
+    // primeNumbers.shift();
+    // notPrimes.unshift(1);
     console.log("Not Primes: ", notPrimes);
     console.log("Primes: ", primeNumbers);
-    // console.log(numberInput);
+    primeNumbers.forEach(function(number){
+      $('#primes').append("<li>" + number + "</li>");
+    })
+
+    notPrimes.forEach(function(number){
+      $('#notPrimes').append("<li>" + number + "</li>");
+    })
+    $('.results').show();
   });
 });
