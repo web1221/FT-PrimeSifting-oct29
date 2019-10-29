@@ -9,7 +9,7 @@ $(document).ready(function(){
       numbers.push(i);
     }
 
-    numbers.forEach(function(number, i){
+    numbers.forEach(function(number){
       if (number % 2 === 0 && number != 2){
         notPrimes.push(number);
       } else if (number % 3 === 0 && number != 3){
@@ -24,10 +24,6 @@ $(document).ready(function(){
         primeNumbers.push(number);
       }
     });
-    // primeNumbers.shift();
-    // notPrimes.unshift(1);
-    console.log("Not Primes: ", notPrimes);
-    console.log("Primes: ", primeNumbers);
     primeNumbers.forEach(function(number){
       $('#primes').append("<li>" + number + "</li>");
     })

@@ -1,3 +1,7 @@
 .results {
   display: none;
 }
+
+body {
+  margin: 25px;
+}
