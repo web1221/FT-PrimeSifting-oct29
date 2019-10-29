@@ -7,20 +7,26 @@ $(document).ready(function(){
     var primeNumbers = [];
     for(var i = 1; i <= numberInput; i++ ){
       numbers.push(i);
-      // if(numbers[i] % 2 === 0){
-      //   notPrimes.slice(numbers[i], 1);
-      // }
     }
 
     numbers.forEach(function(number, i){
-      if (number % 2 === 0){
+      if (number % 2 === 0 && number != 2){
         notPrimes.push(number);
-      } else {
+      } else if (number % 3 === 0 && number != 3){
+        notPrimes.push(number);
+      } else if (number % 5 === 0 && number != 5){
+        notPrimes.push(number);
+      } else if (number % 7 === 0 && number != 7){
+        notPrimes.push(number);
+      }
+       else {
         primeNumbers.push(number);
       }
-    })
-    console.log(notPrimes);
-    console.log(primeNumbers);
+    });
+    primeNumbers.shift();
+    notPrimes.unshift(1);
+    console.log("Not Primes: ", notPrimes);
+    console.log("Primes: ", primeNumbers);
     // console.log(numberInput);
   });
 });
