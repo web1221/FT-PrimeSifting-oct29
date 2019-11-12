@@ -21,7 +21,7 @@ _There are no known bugs_
 
 ## Support and contact details
 
-_If you come accross any issues please email me at AngelaWeber95@hotmail.com_
+_If you come across any issues please email me at AngelaWeber95@hotmail.com_
 
 ## Technologies Used
 
