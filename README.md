@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Prime Sifting_
 
-#### _{Brief description of application}, {Date of current version}_
+#### A project created for Epicodus , Oct 29 2019_
 
-#### By _**{List of contributors}**_
+#### By _**Angela Weber & Chris Sanchez**_
 
 ## Description
 
